@@ -1,0 +1,6 @@
+class tempClassName
+{
+    public:
+	tempClassName();
+	~tempClassName();
+};
