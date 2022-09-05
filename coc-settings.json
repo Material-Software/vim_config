@@ -2,5 +2,6 @@
     "diagnostic.refreshOnInsertMode": true,
     "clangd.inlayHints.enable": false,
     "suggest.enablePreselect": false,
-    "suggest.noselect": false
+    "suggest.noselect": false,
+	"clangd.arguments": ["--header-insertion=never"]
 }

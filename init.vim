@@ -1,5 +1,6 @@
 :set number
 :set shiftwidth=4
+:set tabstop=4
 :set path+=**
 :set nowrap
 :set laststatus=0
@@ -27,20 +28,17 @@
 call plug#begin()
 Plug 'Mofiqul/vscode.nvim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'overcache/NeoSolarized'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
-
-
-
-
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format
 " <C-g>u breaks current undo, please make your own choice.
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 :colorscheme github_dark_default
 ":colorscheme vscode 
+
